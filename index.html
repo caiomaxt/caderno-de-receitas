@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caderno de Receitas - Início</title>
+</head>
+
+<body>
+    <header>
+        <h1>Caderno de Receitas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="caderno-de-receitas/html/torta.html">Torta de Cookies</a></li>
+                <li><a href="caderno-de-receitas/html/brownie.html">Brownie de Chocolate</a></li>
+                <li><a href="caderno-de-receitas/html/pudim.html">Pudim de Leite</a></li>
+                <li><a href="caderno-de-receitas/html/capuccino.html">Capuccino</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <p>Data da avaliação: <time datetime="2026-09-29">29/09/2026</time>.</p>
+
+            <blockquote cite="https://bb.cruzeirodosulvirtual.com.br">
+                "Galera, HTML é apenas LER."
+            </blockquote>
+
+            <p>Usamos siglas como <abbr title="Colher de Sopa">c.s.</abbr> para as medidas.</p>
+        </section>
+
+        <article>
+            <h2>Aviso</h2>
+            <p>Este site foi criado para fins educacionais e demonstrativos, não leve <ins>a sério</ins>.</p>
+        </article>
+
+        <section>
+            <h2>Vídeo do Preparo</h2>
+            <figure>
+                <video src="video/istockphoto-1389382306-640_adpp_is.mp4" controls width="300">
+                    Seu navegador não suporta vídeos.
+                </video>
+                <figcaption>Figura 1: Demonstração do preparo.</figcaption>
+            </figure>
+        </section>
+
+        <aside>
+            <h3>Momento Café</h3>
+            <audio controls autoplay loop>
+                <source src="audio/alex-morgan-coffee-shop-jazz-coffee-shop-music-564252.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </aside>
+
+        <section>
+            <h2>Avaliação</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </p>
+                <p>
+                    <label for="data">Data:</label><br>
+                    <input type="date" id="data" name="data" required>
+                </p>
+                <p>
+                    <label for="receita">Receita:</label><br>
+                    <input type="text" id="receita" name="receita" list="lista_receitas" placeholder="Escolha..."
+                        required>
+                    <datalist id="lista_receitas">
+                        <option value="Torta de Cookies">
+                        <option value="Brownie de Chocolate">
+                        <option value="Pudim de Leite">
+                        <option value="Capuccino">
+                    </datalist>
+                </p>
+                <p>
+                    <label for="nota">Nota (0 a 10):</label><br>
+                    <input type="range" id="nota" name="nota" min="0" max="10">
+                </p>
+                <p>
+                    <label for="foto">Foto:</label><br>
+                    <input type="file" id="foto" name="foto">
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Caderno de Receitas</p>
+    </footer>
+</body>
+
+</html>
